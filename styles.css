@@ -34,6 +34,7 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 .cover-heading { position: absolute; top: 13%; width: 100%; text-align: center; pointer-events: none; color: var(--gold); }
 .cover-heading span { font-size: 11px; letter-spacing: 0; }
 .cover-heading h1 { margin: 9px 0; font-size: 32px; font-weight: 400; }
+.cover-name { position: absolute; top: 24%; width: 100%; margin: 0; padding: 0 12px; color: var(--gold); font-size: 27px; font-weight: 500; font-style: italic; text-align: center; text-shadow: 0 1px 5px #26030699; pointer-events: none; }
 .event-date { position: absolute; top: 79%; width: 100%; text-align: center; color: var(--gold); animation: date-glow 2.8s ease-in-out infinite; }
 .event-date p { margin: 0 12px 6px; font-size: 28px; font-weight: 500; }
 .event-date p + p { font-size: 23px; }
