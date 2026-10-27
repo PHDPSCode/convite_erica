@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#590610">
+  <meta name="description" content="Um convite especial para comemorar minha formatura. 22 de abril de 2027, às 21 horas.">
+  <title>Um convite especial | Formatura</title>
+  <link rel="preload" as="image" href="pagina1.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="art-filters" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="legible-art" color-interpolation-filters="sRGB">
+        <feComponentTransfer>
+          <feFuncR type="linear" slope="1.8" intercept="-0.298039"/>
+          <feFuncG type="linear" slope="1.8" intercept="-0.015686"/>
+          <feFuncB type="linear" slope="1.8" intercept="-0.047059"/>
+        </feComponentTransfer>
+      </filter>
+    </defs>
+  </svg>
+  <main class="invitation" aria-label="Convite de formatura">
+    <div class="pages" id="pages">
+      <section class="page envelope active" aria-label="Envelope do convite" aria-current="page">
+        <div class="artwork">
+          <img class="page-art" src="pagina1.png" alt="Envelope vermelho com selo de cera e monograma dourado" fetchpriority="high" draggable="false">
+          <img class="envelope-flap" src="pagina1.png" alt="" draggable="false" aria-hidden="true">
+          <div class="cover-heading"><span>UM MOMENTO, UMA CONQUISTA</span><h1>Minha formatura</h1></div>
+          <button class="seal-button" id="open-envelope" aria-label="Abrir o selo do convite" title="Abrir convite"></button>
+          <img class="wax-seal" src="pagina1.png" alt="" draggable="false" aria-hidden="true">
+          <div class="event-date"><p>22 de Abril de 2027</p><p>às 21 horas</p></div>
+        </div>
+      </section>
+      <section class="page party" aria-label="Open bar, open food e combinados" inert>
+        <div class="artwork">
+          <img class="page-art" src="pagina2.png" alt="Para a felicidade de todos é open bar e food. Obrigatório: dar prejuízo para o buffet e bar; curtir muitoooo; tirar foto com a formanda antes de 00h, por motivos óbvios. Colagem divertida com bebidas e bonecas antes e depois da festa." draggable="false">
+          <div class="party-shimmer" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section class="page details" aria-label="Valor do convite e prazo de confirmação" inert>
+        <div class="artwork">
+          <img class="page-art" src="pagina3.png" alt="Infelizmente sou guerreira e não herdeira. O valor do convite é R$ 730,00 à vista. Se quiser parcelar, o valor fica R$ 750,00; consultar formas de pagamento. Como diz a poeta Virgínia: descobri que parcelar é chique! O saldo do Ricardo e Wanessa até o final dessa formatura, o preço que se paga por serem pobres e ter uma filha com bom gosto! Até quando confirmar? Os convites são limitados, o prazo final para comprar é até 13 de novembro, então o quanto antes melhor! Só a cara é de herdeira. E claro, seu calango também está convidado!" draggable="false">
+          <div class="price-highlight"><p>O valor do convite é <strong>R$ 730,00 à vista</strong></p></div>
+          <div class="deadline-highlight">
+            <h2>Até quando confirmar?</h2>
+            <p>Os convites são limitados, o prazo final para comprar é até <strong>13 de novembro</strong>, então o quanto antes melhor!</p>
+          </div>
+          <img class="detail-meme balance-meme" src="lovecell-48194.webp" alt="Conta bancária com saldo R$: LISO" draggable="false">
+          <img class="detail-meme heiress-meme" src="lovecell-49359.webp" alt="Menina com coroa e varinha de princesa" draggable="false">
+          <img class="detail-meme lizard-meme" src="lovecell-453613.webp" alt="Calango sorrindo: It's OK bro, not everyone can be funny" draggable="false">
+        </div>
+      </section>
+      <section class="page dress" aria-label="Dress code: traje esporte fino" inert>
+        <div class="artwork">
+          <img class="page-art" src="pagina4.png" alt="Dress code. Traje: esporte fino. Exemplos de vestidos e camisas sociais. Após muitos trabalhos, provas e surtos, finalmente está chegando a hora... E, claro, quero você comemorando comigo!" draggable="false">
+          <div class="dress-highlight" aria-hidden="true"></div>
+        </div>
+      </section>
+      <section class="page closing" aria-label="Um convite exclusivo, único e especial" inert>
+        <div class="artwork">
+          <img class="page-art" src="pagina5.png" alt="05 anos de tortura. Até que enfim a formatura! O convite é exclusivo, único, especial. Brincadeiras à parte, entendo o custo de um convite como esse, mas sua presença é muito importante nesse dia tão especial!" draggable="false">
+          <div class="response-panel is-yes" id="response-panel" role="region" aria-label="Mensagens do convite">
+            <div class="weather" aria-hidden="true"></div>
+            <button class="response-arrow previous" data-response="previous" aria-label="Mensagem anterior" title="Mensagem anterior"><i data-lucide="chevron-left" aria-hidden="true">‹</i></button>
+            <div class="response-copy" aria-live="polite" aria-atomic="true"><h2 id="response-title">SE VOCÊ FOR,</h2><p id="response-text">parabéns amigo(a)/tio(a)/primo(a), você é demais, me chama aqui para comprar o seu ingresso.</p></div>
+            <button class="response-arrow next" data-response="next" aria-label="Próxima mensagem" title="Próxima mensagem"><i data-lucide="chevron-right" aria-hidden="true">›</i></button>
+            <div class="response-dots" aria-hidden="true"><span class="selected"></span><span></span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <nav class="navigation" aria-label="Navegação do convite" hidden>
+      <button class="nav-arrow" id="previous-page" aria-label="Página anterior" title="Página anterior"><i data-lucide="arrow-left" aria-hidden="true">←</i></button>
+      <div class="page-dots" aria-label="Página atual"><span></span><span></span><span></span><span></span><span></span></div>
+      <button class="nav-arrow" id="next-page" aria-label="Próxima página" title="Próxima página"><i data-lucide="arrow-right" aria-hidden="true">→</i></button>
+    </nav>
+    <span class="screen-reader" id="page-status" role="status" aria-live="polite">Página 1 de 5</span>
+  </main>
+</body>
+</html>
